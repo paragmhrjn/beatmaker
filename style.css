@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Grandstander', cursive;
+    background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+    color: #ffffff;
+}
+
+.app{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1{
+    margin: 50px 0;
+    text-align: center;
+    font-size:60px;
+    border-bottom:double 10px;
+    border-radius: 0 0 20px 20px;
+    padding: 5px;
+}
+
+header p{
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 20px 0;
+    border:double #ffffff 4px;
+}
+
+.pads{
+    background: rgb(255, 255, 255);
+    width: 100%;
+    display: flex;
+}
+
+.pads > div{
+    height: 100px;
+    width:100px;
+    flex: 1;
+    cursor: pointer;
+    margin: 20px;
+    border-radius: 20px;
+    transition: all 0.2s ease-in-out;
+    
+}
+.pads > div:hover{
+    transform: scale(1.1);
+}
+
+.pad1{
+    background: #5bc07d;
+}
+.pad1:hover{
+    background: #2f884d;
+}
+
+.pad2{
+    background: #b39c39;
+}
+
+.pad2:hover{
+    background: #8f7c2b;
+}
+
+.pad3{
+    background: #be5454;
+}
+
+.pad3:hover{
+    background: #9b3c3c;
+}
+
+.pad4{
+    background: #5f93e0;
+}
+
+.pad4:hover{
+    background: #23406d;
+}
+
+.pad5{
+    background: #d2df58;
+}
+
+.pad5:hover{
+    background: #7f882b;
+}
+
+.pad6{
+    background: #606060;
+}
+
+.pad6:hover{
+    background: #414141;
+}
+
+.visual > div {
+    position: absolute;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    bottom: 0%;
+    left:20%;
+    bottom: 0%;
+    z-index: -1;
+    border: solid #ffffff 3px;
+}
+
+
+@keyframes jump{
+    0%{
+        bottom: 0%;
+        left: 20%;
+    }
+    50%{
+        bottom: 50%;
+        left: 50%;
+    }
+    100%{
+        bottom: 0%;
+        left: 80%;
+    }
+
+}
